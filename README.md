@@ -2,7 +2,7 @@
 
 A laboratory activity for our Web Development curriculum, featuring HTML5, CSS3, JavaScript, and JQuery.
 
-## Features:
+## Features: (AS PER OUR INSTRUCTOR'S GUIDELINES)
 - **Task Management**: Users can check/uncheck tasks. Completed tasks are marked with a strike-through.
 - **Task Deletion**: Double-clicking a task automatically deletes it.
 - **User Notifications**: Displays an alert notification whenever an action is performed, such as adding a new task (e.g., "New task successfully added").
