@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="todolist.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laboratory Exercise 8 & 9: JQuery and AJAX</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+
+  <div class="box-shadow">
+
+    <h2>YOUR PERSONAL TO-DO-LIST</h2>
+    <h4>Organize your tasks with ease~</h4>  
+
+    <input type="text" id="taskInput" 
+           placeholder="What do you want to do today?">
+           
+    <button id="addTaskBtn">Add Task</button>
+    <ul id="taskList"></ul>
+
+    <script>
+      //load from .json file
+      $(document).ready(function() {
+        function fetchTasks() {
+          $.get("tasks.json", function(data) {
+            $('#taskList').empty(); 
+            $.each(data, function(index, task) {
+              var listItem = $('<li></li>');
+              var checkbox = $('<input type="checkbox">').prop('checked', task.completed);
+              var taskLabel = $('<span></span>').text("🔰 " + task.name);
+              if (task.completed) {
+                taskLabel.addClass('completed'); 
+              }
+              var editButton = $('<button>Edit</button>').click(function() {
+                editTask(task, listItem);
+                return false;
+              });
+              listItem.append(checkbox).append(taskLabel).append(editButton);
+              $('#taskList').append(listItem.hide().fadeIn("slow"));
+            });
+          });
+        }
+        $("#addTaskBtn").click(function() {
+          var newTask = $("#taskInput").val().trim();
+          if (newTask !== "") {
+            var listItem = $("<li></li>");
+            var checkbox = $('<input type="checkbox">');
+            var taskLabel = $("<span></span>").text("🔰 " + newTask);
+            var editButton = $('<button>Edit</button>').click(function() {
+              editTask({ name: newTask, completed: false }, listItem);
+              return false;
+            });
+            //add new task
+            listItem.append(checkbox).append(taskLabel).append(editButton);
+            $("#taskList").append(listItem.hide().fadeIn("slow"));
+            $("#taskInput").val("");
+            alert("New task successfully added.");
+          } else {
+            alert("Text field is empty. Try again.");
+          }
+        });
+        //mark the task as complete or not yet completed
+        $("#taskList").on("change", "input[type='checkbox']", function() {
+              var taskLabel = $(this).next("span");
+              var taskCompleted = $(this).is(':checked');
+              taskLabel.toggleClass('completed');
+              if (taskCompleted) {
+                alert("Task is finished.");
+              } else {
+                alert("Task is unfinished.");
+              }
+            });
+        //delete task when double clicked 
+        $("#taskList").on("dblclick", "li", function() {
+          $(this).fadeOut("slow", function() {
+            $(this).remove();
+            alert("Task successfully deleted.");
+          });
+        });
+        //update an existing task
+        function editTask(task, listItem) {
+          var currentText = listItem.find("span").text().replace("🔰 ", "");
+          var newTaskName = prompt("Edit Task:", currentText);
+          if (newTaskName !== null && newTaskName.trim() !== "") {
+            task.name = newTaskName.trim();
+            listItem.find("span").text("🔰 " + task.name); 
+            alert("Task successfully updated.");
+          }
+        }
+        fetchTasks();
+      });
+    </script>
+    <h4>Be more productive :)</h4>
+
+    <br><hr>
+    <footer>
+      <h6>Gyro Vinz L. Sagal<br>
+          BSIT - 2B
+      </h6>
+    </footer>
+  </div>
+</body>
+</html>

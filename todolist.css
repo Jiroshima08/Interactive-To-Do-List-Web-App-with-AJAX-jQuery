@@ -1,0 +1,109 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(180deg, #004214, #1d640b);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    min-height: 100vh;
+    padding-top: 40px;
+}
+::placeholder {
+    font-size: 15px;
+}
+.box-shadow {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 16px 20px rgba(0, 0, 0, 0.15);
+    width: 400px;
+}
+h2 {
+    color: rgb(0, 43, 13);
+    font-size: 26px;
+    margin-bottom: 10px;
+    text-align: center;
+} 
+h4 {
+    font-size: 16px;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 20px;
+    color: #666;
+}
+h6 {
+    font-size: 14px;
+    text-align: center;
+    font-weight: lighter;
+    margin-bottom: 20px;
+    color: #666;
+}
+#taskInput {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    border: 2px solid #084100;
+    border-radius: 8px;
+    font-size: 16px;
+}
+#addTaskBtn {
+    width: 30%;
+    padding: 12px;
+    background-color: #084100;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+    margin-left: 140px;
+    margin-top: 20px;
+}
+#addTaskBtn:hover {
+    background-color: #1bbd43;
+}
+#taskList {
+    list-style-type: none;
+    padding: 0;
+}
+#taskList li {
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 12px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+#taskList li:hover {
+    background-color: #e8e8ff;
+}
+#taskList span {
+    flex: 1;
+    font-size: 16px;
+}
+#taskList span.completed {
+    text-decoration: line-through;
+    color: #aaa;
+}
+#taskList button {
+    background-color: #ffd700;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+}
+#taskList button:hover {
+    background-color: #ffc107;
+}
+.completed {
+    text-decoration: line-through;
+    color: #888;
+}
