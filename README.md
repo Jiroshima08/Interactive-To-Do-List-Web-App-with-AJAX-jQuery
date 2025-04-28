@@ -1,4 +1,4 @@
-# To-Do-List-AJAX-jQuery
+# To-Do-List-AJAX-JQuery
 
 A laboratory activity for our Web Development curriculum, featuring HTML5, CSS3, JavaScript, and JQuery.
 
