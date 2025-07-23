@@ -1,16 +1,87 @@
-# To-Do-List-AJAX-JQuery
+**Interactive To-Do List Web App with AJAX & jQuery**
 
-A laboratory activity for our Web Development curriculum, featuring HTML5, CSS3, JavaScript, and JQuery.
+---
 
-## Features: (AS PER OUR INSTRUCTOR'S GUIDELINES)
-- **Task Management**: Users can check/uncheck tasks. Completed tasks are marked with a strike-through.
-- **Task Deletion**: Double-clicking a task automatically deletes it.
-- **User Notifications**: Displays an alert notification whenever an action is performed, such as adding a new task (e.g., "New task successfully added").
-- **JQuery Animations**: Tasks are deleted with a smooth fade-out animation using the `fadeOut()` method.
-- **JQuery DOM Manipulation**: Utilizes JQuery DOM methods to manage task interactions dynamically.
+```markdown
+# ✅ Interactive To-Do List Web App with AJAX & jQuery
 
-## Technologies Used:
-- HTML5
-- CSS3
-- JavaScript
-- JQuery
+This project is a dynamic and responsive To-Do List application that demonstrates the use of **HTML**, **CSS**, **JavaScript**, **jQuery**, and **AJAX** to handle task management operations. It emphasizes client-server interaction and DOM manipulation to create a seamless user experience without full page reloads.
+
+---
+
+## 🚀 Features
+
+- ✏️ **Add Tasks**: Input field with button to append new tasks to the list.
+- ✅ **Mark as Complete**: Tasks can be marked complete using checkboxes or class toggles.
+- ❌ **Delete Tasks**: Instantly remove tasks from the DOM and backend with AJAX.
+- 🔁 **AJAX Integration**: All updates are handled asynchronously, minimizing page refreshes.
+- 🧠 **jQuery-Powered UI**: Smooth animations and efficient element manipulation via jQuery.
+
+---
+
+## 🛠️ Technologies Used
+
+- **HTML5**
+- **CSS3**
+- **JavaScript (ES6)**
+- **jQuery**
+- **AJAX**
+
+---
+
+## 📂 Project Structure
+
+```
+
+To-Do-List-AJAX-jQuery-/
+├── index.html
+├── style.css
+├── script.js
+├── /assets
+│   └── icons, images (optional)
+├── /php or /data (if backend is present)
+
+````
+
+---
+
+## 📌 How to Use
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Jiroshima08/To-Do-List-AJAX-jQuery-.git
+````
+
+2. Open `index.html` in your browser.
+   *(If backend is included, host it on a local server like XAMPP, WAMP, or Live Server.)*
+
+---
+
+## 🧠 Learning Objectives
+
+* Understand asynchronous behavior using **AJAX**.
+* Manipulate the DOM with **jQuery**.
+* Handle user interaction with dynamic frontend logic.
+* Design a lightweight UI for real-time task interaction.
+
+---
+
+## 👨‍💻 Author
+
+**Gyro Vinz L. Sagal**
+BS Information Technology, Sophomore
+
+---
+
+## 📃 License
+
+This project is open-source and available for educational and personal use.
+
+---
+
+> *“The smallest task completed is a step toward a productive day.”*
+
+```
+
+---
+
