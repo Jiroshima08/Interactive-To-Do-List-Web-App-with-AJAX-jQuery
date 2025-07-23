@@ -37,8 +37,8 @@ This project is a dynamic and responsive To-Do List application that demonstrate
 
 ## 👨‍💻 Author
 
-**Gyro Vinz L. Sagal**
-BS Information Technology, Sophomore
+**Gyro Vinz L. Sagal**  
+Bachelor of Science in Information Technology
 
 ---
 
