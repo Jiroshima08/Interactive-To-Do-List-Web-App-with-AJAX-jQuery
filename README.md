@@ -26,8 +26,6 @@ This project is a dynamic and responsive To-Do List application that demonstrate
 
 ---
 
----
-
 ## 🧠 Learning Objectives
 
 * Understand asynchronous behavior using **AJAX**.
