@@ -29,29 +29,6 @@ This project is a dynamic and responsive To-Do List application that demonstrate
 
 ---
 
-## 📂 Project Structure
-
-```
-
-To-Do-List-AJAX-jQuery-/
-├── index.html
-├── style.css
-├── script.js
-├── /assets
-│   └── icons, images (optional)
-├── /php or /data (if backend is present)
-
-````
-
----
-
-## 📌 How to Use
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Jiroshima08/To-Do-List-AJAX-jQuery-.git
-````
-
 2. Open `index.html` in your browser.
    *(If backend is included, host it on a local server like XAMPP, WAMP, or Live Server.)*
 
