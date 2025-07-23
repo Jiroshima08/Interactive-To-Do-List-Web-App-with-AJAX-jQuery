@@ -26,9 +26,6 @@ This project is a dynamic and responsive To-Do List application that demonstrate
 
 ---
 
-2. Open `index.html` in your browser.
-   *(If backend is included, host it on a local server like XAMPP, WAMP, or Live Server.)*
-
 ---
 
 ## 🧠 Learning Objectives
