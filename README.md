@@ -1,8 +1,5 @@
 **Interactive To-Do List Web App with AJAX & jQuery**
 
----
-
-```markdown
 # ✅ Interactive To-Do List Web App with AJAX & jQuery
 
 This project is a dynamic and responsive To-Do List application that demonstrates the use of **HTML**, **CSS**, **JavaScript**, **jQuery**, and **AJAX** to handle task management operations. It emphasizes client-server interaction and DOM manipulation to create a seamless user experience without full page reloads.
@@ -54,11 +51,7 @@ BS Information Technology, Sophomore
 
 This project is open-source and available for educational and personal use.
 
----
-
 > *“The smallest task completed is a step toward a productive day.”*
-
-```
 
 ---
 
